@@ -47,10 +47,10 @@
 
 ```bash
 curl -X POST <出力されたURL> -d '{"message":"Hello World"}'
+
+---
+
 ディレクトリ構成
-plaintext
-コピーする
-編集する
 serverless-api-terraform/
 │
 ├── environments/
@@ -65,16 +65,10 @@ serverless-api-terraform/
 │   └── dynamodb/
 │
 └── README.md
+
 補足・解説
 API Gateway HTTP APIは、REST APIよりもコスト削減＆高速化が見込めるため「新規構築ではまず選択肢」となる最新仕様です。
 
 Lambdaは「AWS管理の実行環境」で自動実行＆スケーリングされるため、インフラ保守から解放されます。
 
 DynamoDBは「サーバーレス」＆「NoSQL」なのでRDSと比べて運用負荷ゼロ・料金も従量課金で安価。
-
-こんな方におすすめ
-AWS実務未経験だが本格的なサーバーレスAPI構築を体験したい
-
-IaCポートフォリオを作りたい（面接やGitHub用に最適）
-
-既存業務の自動化・API化を個人で再現してみたい
