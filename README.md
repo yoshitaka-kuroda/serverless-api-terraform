@@ -39,19 +39,15 @@ terraform plan -out=tfplan.out
 
 # 5. リソースの作成
 terraform apply tfplan.out
+
 上記実行後、API Gateway のエンドポイント URL が出力されます。
 
-サンプルAPI呼び出し例
-bash
-コピーする
-編集する
 curl -X POST <出力されたURL> -d '{"message":"Hello World"}'
 レスポンスに "Hello, World!" が返ってくれば正常です。
 
 ディレクトリ構成
-python
-コピーする
-編集する
+
+```
 serverless-api-terraform/
 │
 ├── environments/               # 環境ごとの Terraform 実行用ファイルを格納
@@ -75,6 +71,7 @@ serverless-api-terraform/
 │       └── outputs.tf
 │
 └── README.md                   # このファイル
+```
 補足・解説
 API Gateway HTTP API
 REST API に比べてコスト・レイテンシ共に有利なため、最近の AWS プロジェクトでは標準的に選択される傾向があります。
