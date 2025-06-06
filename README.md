@@ -45,7 +45,7 @@ terraform apply tfplan.out
 curl -X POST <出力されたURL> -d '{"message":"Hello World"}'
 レスポンスに "Hello, World!" が返ってくれば正常です。
 
-```plaintext
+```
 serverless-api-terraform/
 ├── environments/
 │   └── dev/
