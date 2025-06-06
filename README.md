@@ -72,6 +72,7 @@ serverless-api-terraform/
 │
 └── README.md                   # このファイル
 ```
+
 補足・解説
 API Gateway HTTP API
 REST API に比べてコスト・レイテンシ共に有利なため、最近の AWS プロジェクトでは標準的に選択される傾向があります。
