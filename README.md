@@ -24,7 +24,6 @@ API Gatewayにアクセスすると、Lambda関数（サーバーレスのプロ
 
 ## 実行手順
 
-```bash
 # 1. environments/dev ディレクトリへ移動
 cd serverless-api-terraform/environments/dev
 
