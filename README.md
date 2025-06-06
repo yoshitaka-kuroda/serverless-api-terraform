@@ -45,17 +45,13 @@ terraform apply tfplan.out
 curl -X POST <出力されたURL> -d '{"message":"Hello World"}'
 レスポンスに "Hello, World!" が返ってくれば正常です。
 
-```
-ディレクトリ構成
-
+```plaintext
 serverless-api-terraform/
-│
-├── environments/               # 環境ごとの Terraform 実行用ファイルを格納
+├── environments/
 │   └── dev/
 │       ├── main.tf             # モジュール呼び出し・環境ごとメイン定義
 │       ├── variables.tf        # main.tf で使う変数定義
 │       └── terraform.tfvars    # 環境固有の値（例：テーブル名、Lambda名など）
-│
 ├── modules/                    # 再利用可能なモジュール群
 │   ├── apigw/                  # API Gateway（HTTP API）構成モジュール
 │   │   ├── main.tf
@@ -69,7 +65,6 @@ serverless-api-terraform/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
-│
 └── README.md                   # このファイル
 ```
 
